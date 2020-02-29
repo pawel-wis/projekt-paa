@@ -7,3 +7,4 @@ sworzone miejsce wdrozenia
  git add . && git commit -m "Integracja galezi deploy"
  git push origin deploy
 
+![git](https://i.ibb.co/nzW9Rkg/2.png)
