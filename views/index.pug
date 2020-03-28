@@ -1,5 +1,10 @@
-extends layout
+extends leyout
 
 block content
-  h1 Siemka WSB
-  p Pierwsza apka z Azura
+  form(action="/tasks/add", method="post")
+    label(for="title")
+      | Tytuł
+    br
+    input(type="text" id="title" name="title")
+    br
+    input(type="submit", value="Dodaj")
