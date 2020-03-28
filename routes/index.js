@@ -1,6 +1,10 @@
 const router = require('koa-router')()
+const store = require('../store')
 
-router.get('/', async (ctx, next) => {
+router.get(sync (ctx, next) => {
+  tasks = await store.listTasks()
+  await ctx.render('index', { tasks })
+})'/', async (ctx, next) => {
   await ctx.render('index', {
     title: 'Hello Koa 2!'
   })
