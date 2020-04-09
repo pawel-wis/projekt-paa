@@ -1,4 +1,4 @@
-const router = require('koa-router')()
+const rou.}er = require('koa-router')()
 const store = require('../store')
 
 router.prefix('/tasks')
